@@ -78,6 +78,9 @@
 
 		<section class="container">
 			<h2 id="titulo-form">Adicionar novo paciente</h2>
+			<ul id="msgs-erro">
+
+			</ul>
 			<form id="add-form">
 				<div class="grupo">
 					<label for="nome">Nome:</label>
@@ -93,14 +96,15 @@
 				</div>
 				<div class="grupo">
 					<label for="gordura">% de Gordura:</label>
-					<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+					<input id="gordura" name="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
 				</div>
 		
 				<button id="add-paciente" class="botao bto-principal">Adicionar</button>
 			</form>
 		</section>
-
-		<script src="js/principal.js"></script>
+		
+		<script src="js/calcula-imc.js"></script>
+		<script src="js/form.js"></script>
 
 	</body>
 </html>
