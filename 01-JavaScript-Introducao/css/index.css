@@ -144,7 +144,6 @@ button[disabled=disabled], button:disabled {
 .fade-out {
 	opacity: 0;
 	transition: 0.5s;
-<<<<<<< HEAD
 }
 
 #filtrar-tabela {
@@ -155,6 +154,4 @@ button[disabled=disabled], button:disabled {
 
 .invisivel {
 	display: none;
-=======
->>>>>>> 64e1248fdeca65ea38decfe356b9416e546327fa
 }
