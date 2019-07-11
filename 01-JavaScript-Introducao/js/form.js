@@ -8,10 +8,7 @@ btnAdicionar.addEventListener("click", function(event){
 
     // Capturando os conteúdos dos campos no form
     var paciente = capturaDadosPaciente(form);
-
-    // Criando o modelo de linha para inserir as informações de um paciente
-    var pacienteTr = criaLinha(paciente);
-
+    
     // Recebe o retorno da validação
     var erros = validaPaciente(paciente);
     
@@ -20,15 +17,24 @@ btnAdicionar.addEventListener("click", function(event){
         exibeMsgsErro(erros);
         return;
     }
-
-    // Seleciona a tabela
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr); // inserindo a nova linha à tabela existente
-
+    
+    adicionaPacienteNaTabela(paciente);
+    
     form.reset();
     var listaErros = document.querySelector("#msgs-erro");
     listaErros.innerHTML = "";
 });
+
+
+
+function adicionaPacienteNaTabela(paciente) {
+    // Criando o modelo de linha para inserir as informações de um paciente
+    var pacienteTr = criaLinha(paciente);
+    
+    // Seleciona a tabela
+    var tabela = document.querySelector("#tabela-pacientes");
+    tabela.appendChild(pacienteTr); // inserindo a nova linha à tabela existente
+}
 
 
 

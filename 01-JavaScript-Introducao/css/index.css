@@ -140,3 +140,18 @@ button[disabled=disabled], button:disabled {
 #msgs-erro {
 	color: red;
 }
+
+.fade-out {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 350px;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+.invisivel {
+	display: none;
+}
